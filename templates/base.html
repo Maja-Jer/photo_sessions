@@ -47,9 +47,10 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
+                    <h2 class="logo-font text-black my-0"><strong>Photo Sessions</h2>
          <!--Search bar-->       
-                <div class="col-lg-4 my-auto py-1 py-lg-0 d-lg-block d-none">
-                <form method="GET" action="">
+                <div class="col-lg-12 my-auto py-1 py-lg-0 d-lg-block d-none">
+                <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
@@ -66,14 +67,7 @@
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
-        </div>
-            <!--logo Bootstrap-->
-            <div class="col col-lg-4 my-auto py-1 and py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-front text-black my-0">Photo Sessions</h2>
-                </a>
-            </div>
-            
+        </div>            
     </header>
 
     {% if messages %}

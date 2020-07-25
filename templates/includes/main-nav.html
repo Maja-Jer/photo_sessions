@@ -8,7 +8,7 @@
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item ">By Rating</a>
                 <a href="" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Photos</a>
             </div>
         </li>
 
@@ -17,11 +17,11 @@
                 Japan
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="japan-link">
-                <a href="" class="dropdown-item">Tokyo</a>
-                <a href="" class="dropdown-item">Nara</a>
-                <a href="" class="dropdown-item">Osaka</a>
-                <a href="" class="dropdown-item">Mt.Fuji</a>
-                <a href="" class="dropdown-item">All Japan</a>
+                <a href="{% url 'products' %}?category=tokyo" class="dropdown-item">Tokyo</a>
+                <a href="{% url 'products' %}?category=nara" class="dropdown-item">Nara</a>
+                <a href="{% url 'products' %}?category=osaka" class="dropdown-item">Osaka</a>
+                <a href="{% url 'products' %}?category=volcano" class="dropdown-item">Mt.Fuji</a>
+                <a href="{% url 'products' %}?category=tokyo,nara,osaka,volcano" class="dropdown-item">All Japan</a>
             </div>
         </li>
 
@@ -30,10 +30,10 @@
                 Philippines
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="philippines-link">
-                <a href="" class="dropdown-item">Palawan</a>
-                <a href="" class="dropdown-item">Boracay</a>
-                <a href="" class="dropdown-item">Manila</a>
-                <a href="" class="dropdown-item">All Philippines</a>
+                <a href="{% url 'products' %}?category=palawan" class="dropdown-item">Palawan</a>
+                <a href="{% url 'products' %}?category=boracay" class="dropdown-item">Boracay</a>
+                <a href="{% url 'products' %}?category=manila" class="dropdown-item">Manila</a>
+                <a href="{% url 'products' %}?category=palawan,boracay,manila" class="dropdown-item">All Philippines</a>
             </div>
         </li>
 
@@ -42,10 +42,10 @@
                 Portugal
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="portugal-link">
-                <a href="" class="dropdown-item">Lisbon</a>
-                <a href="" class="dropdown-item">Porto</a>
-                <a href="" class="dropdown-item">Sailing</a>
-                <a href="" class="dropdown-item">All Portugal</a>
+                <a href="{% url 'products' %}?category=lisbon" class="dropdown-item">Lisbon</a>
+                <a href="{% url 'products' %}?category=porto" class="dropdown-item">Porto</a>
+                <a href="{% url 'products' %}?category=sailing" class="dropdown-item">Sailing</a>
+                <a href="{% url 'products' %}?category=lisbon,porto,sailing" class="dropdown-item">All Portugal</a>
             </div>
         </li>
         
