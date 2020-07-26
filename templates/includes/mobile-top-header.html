@@ -21,7 +21,6 @@
         </form>
     </div>
 </li>
-<!--My account dropdown-->
 <li class="list-inline-item dropdown">
     <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
@@ -32,7 +31,7 @@
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
-                <a href="{% url 'account_logout' %}" class="dropdown-item">Photo management</a>
+                <a href="{% url 'account_logout' %}" class="dropdown-item">Photo Management</a>
             {% endif %}
             <a href="" class="dropdown-item">My Profile</a>
             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -42,9 +41,8 @@
         {% endif %}
     </div>
 </li>
-<!--shopping list access-->
 <li class="list-inline-item">
-    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="">
+    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
         <div class="text-center">
             <div><i class="fas fa-shopping-bag fa-lg"></i></div>
             <p class="my-0">
