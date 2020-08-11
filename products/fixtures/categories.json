@@ -1,1 +1,67 @@
-[{"pk": 1, "model": "products.category", "fields": {"name": "japan", "friendly_name": "Japan"}}, {"pk": 2, "model": "products.category", "fields": {"name": "philippines", "friendly_name": "Philippines"}}, {"pk": 3, "model": "products.category", "fields": {"name": "portugal", "friendly_name": "Portugal"}}, {"pk": 4, "model": "products.category", "fields": {"name": "nara", "friendly_name": "Nara"}}, {"pk": 5, "model": "products.category", "fields": {"name": "osaka", "friendly_name": "Osaka"}}, {"pk": 6, "model": "products.category", "fields": {"name": "volcano", "friendly_name": "Mt.Fuji"}}, {"pk": 7, "model": "products.category", "fields": {"name": "boracay", "friendly_name": "Boracay"}}, {"pk": 8, "model": "products.category", "fields": {"name": "palawan", "friendly_name": "Palawan"}}, {"pk": 9, "model": "products.category", "fields": {"name": "manila", "friendly_name": "Manila"}}, {"pk": 10, "model": "products.category", "fields": {"name": "sailing", "friendly_name": "Sailing"}}, {"pk": 11, "model": "products.category", "fields": {"name": "lisbon", "friendly_name": "Lisbon"}}, {"pk": 12, "model": "products.category", "fields": {"name": "porto", "friendly_name": "Porto"}}, {"pk": 13, "model": "products.category", "fields": {"name": "tokyo", "friendly_name": "Tokyo"}}]
+[
+  {
+    "pk": 1,
+    "model": "products.category",
+    "fields": { "name": "japan", "friendly_name": "Japan" }
+  },
+  {
+    "pk": 2,
+    "model": "products.category",
+    "fields": { "name": "philippines", "friendly_name": "Philippines" }
+  },
+  {
+    "pk": 3,
+    "model": "products.category",
+    "fields": { "name": "portugal", "friendly_name": "Portugal" }
+  },
+  {
+    "pk": 4,
+    "model": "products.category",
+    "fields": { "name": "nara", "friendly_name": "Nara" }
+  },
+  {
+    "pk": 5,
+    "model": "products.category",
+    "fields": { "name": "osaka", "friendly_name": "Osaka" }
+  },
+  {
+    "pk": 6,
+    "model": "products.category",
+    "fields": { "name": "volcano", "friendly_name": "Mt.Fuji" }
+  },
+  {
+    "pk": 7,
+    "model": "products.category",
+    "fields": { "name": "boracay", "friendly_name": "Boracay" }
+  },
+  {
+    "pk": 8,
+    "model": "products.category",
+    "fields": { "name": "palawan", "friendly_name": "Palawan" }
+  },
+  {
+    "pk": 9,
+    "model": "products.category",
+    "fields": { "name": "manila", "friendly_name": "Manila" }
+  },
+  {
+    "pk": 10,
+    "model": "products.category",
+    "fields": { "name": "sailing", "friendly_name": "Sailing" }
+  },
+  {
+    "pk": 11,
+    "model": "products.category",
+    "fields": { "name": "lisbon", "friendly_name": "Lisbon" }
+  },
+  {
+    "pk": 12,
+    "model": "products.category",
+    "fields": { "name": "porto", "friendly_name": "Porto" }
+  },
+  {
+    "pk": 13,
+    "model": "products.category",
+    "fields": { "name": "tokyo", "friendly_name": "Tokyo" }
+  }
+]

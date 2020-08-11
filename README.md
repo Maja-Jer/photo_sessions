@@ -1,16 +1,14 @@
 # UX
-## Goals
-### Visitor Goals
-The central target audience for Photo Sessions are:
 
+## Goals
+
+### Visitor Goals
+
+The central target audience for Photo Sessions are:
 
 ### User goals are:
 
-
-
 A few of the possible goals users might have:
-
-
 
 The design of this site fits the conventions of similar sites, and lays out the information in a user friendly and accessible way.
 
@@ -39,6 +37,7 @@ The account page for the admin user shows all their existing products and gives 
 The users needs on each page have been thought about and buttons provided for these paths through the site, to make navigating easy.
 
 ### Photo Sessions Goals
+
 <!-- Provide an effective, easy to use site for .......-->
 
 So that I can learn and practice frontend and backend programming together for the first time. To combine the use of HTML, CSS, Bootstrap and JavaScript with Python, Django....
@@ -46,7 +45,9 @@ So that I can learn and practice frontend and backend programming together for t
 While this is currently a student project, the idea is to transform this site into a site that sells prints of my personal photos and print of my friends' artwork (check Features to implement)
 
 # User Stories
+
 ## Visitor Stories
+
 As a visitor to Photo Sessions I expect/want/need:
 
 To easily find what I am looking for, I want the layout of the site to make sense so I am not confused or put off using it.
@@ -74,6 +75,7 @@ As a user of Photo Sessions, I expect to be able to easily get in contact via a 
 <!--As a user I expect feedback from the website I am using when I interact with it, I expect loading spinners when pages are taking a while to load, I expect pop ups and modals to inform me when my forms have been completed and sent correctly.-->
 
 ## Business Stories
+
 As a Business advertising on Photo Sessions I expect/want/need:
 
 To see that various methods of contacting my business are available to users using Photo Sessions.
@@ -91,15 +93,16 @@ Forms for inputting my data to make the process easy, that there is no wasting m
 ????? Protections have been put in place to prevent me from accidentally deleting a photo.-->
 
 # Design Choices
+
 The Photo Sessions website has an overall family friendly feel, with emphasis on providing complex information in a bite size, learnable format. The following design choices were made with this in mind:
 
 ## Fonts
+
 The primary font Lato was chosen for the main text of the site because it is easy to read and complements the fonts chosen for titles very well. A extra reason for picking this font is that it is still easy to read when printed small.
 
-The secondary font 
+The secondary font
 
-The tertiary font 
-
+The tertiary font
 
 <!--????? Social media icons for facebook, instagram and twitter are used in 3 places on the site.-->
 
@@ -108,6 +111,7 @@ In the footer, to link to the social media outlets for Photo Sessions. these lin
 On each photo page for any links provided by the organizers to their events and activities.
 
 ## Colours
+
 ### Photo Sessions Brand Colours
 
 The brand colours for this project were chosen because they are colorful, which references to travel well, while still choosing tones and shades that worked well together without overwhelming the eyes.
@@ -123,13 +127,14 @@ In the footer a darker shade of blue, provides the background colour, setting th
 <!--????? The same darker blue is used for the filters bar on the activities page. Blue is a colour for travel, so was a good choice for the feeling of this website.-->
 
 ## Styling
+
 <!--????? A loading spinner was added to Photo Sessions, to run while the page or data loads. The spinner chosen resembles a wind spinner toy. I picked it because it is colorful and fits well with the overall feel and demographic for the site.-->
 
 All buttons on the site fit the same bootstrap button styling in size and shape, but I added my own brand colours to them so they fit in with the rest of the content.
 
 <!--????? Bootstrap cards were utilized on Photo Sessions to display short information about each photo, with a link to each photo page on it. The cards were styled with curved corners, a theme repeated around the entire website in images, input boxes, buttons, pagination links etc.-->
 
-A bootstrap 
+A bootstrap
 
 hover effects
 
@@ -138,17 +143,19 @@ hover effects
 ????? Css effects on buttons cause them to animate to a darker shade when hovered over, this same effect is also applied to all text links on the site.-->
 
 # Wireframes
+
 These wireframes were created using Balsamiq during the Scope Plane part of the design and planning process for this project.
 P
 UT WIREFRAMES IN A SEPARATE DOC
-
 
 ????? PDF
 Photo Sessions development planes PDF
 This document was created during the planning phase of this project. The final website has some slight differences from what was planned. But I included this document in the project to provide insight into the original planning and direction of the site during the planning stages.
 
 # Features
+
 ## Existing Features
+
 Elements on every page
 Navbar
 
@@ -180,6 +187,7 @@ Python determines if the user is logged in or not by checking if 'user' in sessi
 ## Footer
 
 ### The footer features:
+
 Contact information for Photo Sessions, currently an email address
 Brief description of the purpose and mission for the site.
 Copyright information.
@@ -196,7 +204,9 @@ function scrollFunction() {
         $("#to-top-btn").removeClass('active');
     }
 }-->
+
 ## Home Page
+
 Photo Sessions home page on all major screen sizes
 Background Image
 
@@ -207,7 +217,6 @@ Photo Cards
 Each event card on the home page gives the user some brief and useful information about each of the photos displayed. The photo image, price, rating. ???? Every card is clickable to go to the main photo page for that photo, so that if the user wishes to learn more the information is only one click away.
 
 The images on the cards are set to background-image using css, which ensures that no matter what dimensions the original image provided was, all card images have equal size, making for a much more attractive site and user experience.-->
-
 
 Filters
 
@@ -228,8 +237,9 @@ The user is also provided with a clear Sort By button if they wish to return to 
 Pagination is included on the activities page when the number of results to display is over 12. Each page contains up to 12 photos. This was done to make loading times faster and a smoother experience for the user.-->
 
 ### photo Page
+
 Photo Sessions photo page on all major screen sizes
-Each photo page for an entry in the database displays that information in clearly laid out and easy to digest way. 
+Each photo page for an entry in the database displays that information in clearly laid out and easy to digest way.
 
 The image for the photo, in the photo page the dimensions of this image are not altered, so that the photo can have their entire picture on the website.
 
@@ -248,6 +258,7 @@ The email business button opens a modal with an email form to send to the admin 
 At the bottom of the photo pages there is a Return to Top button, which takes the user (back) to the activities page.
 
 ### Create Account Page
+
 <!--The create account page features a simple form, where the user can input an account name, email address and password. The form was kept deliberately simple so that signup has minimum barriers.
 
 Once the form is complete the data is sent to the backend using JavaScript fetch() and then a request is made to MongoDB to check if the user name or email address already exists in the the database.
@@ -261,6 +272,7 @@ This Account and Log In Pages Flowchart fully explains the behavior of the forms
 (see Features Left to Implement for additional features to be included on this page in future releases)-->
 
 ### log In Page
+
 <!--The log in page also features a simple form where the user can enter either their username or their email address, and their password.
 
 This form also uses JavaScript fetch() to pass the input data from the user to Python. The reason for this use is that I wanted to provide the user with a modal once they were logged in, rather than reloading the page.
@@ -272,6 +284,7 @@ When the user logs in with a correct email and password a success modal appears 
 This Account and Log In Pages Flowchart fully explains the behavior of the forms, data checks and modal messages on this page and the Account Page.-->
 
 ### Account Settings Page
+
 <!--The account settings page includes two small forms for the user to update their email address or password.
 
 Each form requires the user to input their current email/password and then their new one.
@@ -279,6 +292,7 @@ Each form requires the user to input their current email/password and then their
 If the current data is not correct the user is informed of this via modal.-->
 
 ### Account Page
+
 <!--Photo Sessions account page on all major screen sizes
 At the top right of the account page a cog icon for access to the Account Settings Page is displayed. The positioning of this is the convention for links to settings, which is why it was chosen for this page as well.
 
@@ -299,6 +313,7 @@ Once the field value is equal to "DELETE" the confirm delete button on the modal
 This feature was included to prevent accidental deletion of a complex data entry.-->
 
 ### Add New photo Page
+
 Photo Sessions add new photo page on all major screen sizes
 The Add New Photo Page is where the admin provides the data for the Photo Sessions activities database.
 
@@ -312,7 +327,6 @@ price
 rating
 photo itself
 friendly name
-
 
 Categories ????? check-boxes to indicate what categories the activity applies to.
 Japan
@@ -339,13 +353,14 @@ Limits are placed on the length of input accepted, in order to protect from buff
 At the bottom of the page the user is given a button to preview their data in the photo page, before it is published to the website. When this button is pushed the data is put into the database with the additional key value pair of {"published": false} applied to it. Then the preview page is loaded.-->
 
 ### Preview photo Page
+
 <!--The preview photo page is where the admin can preview their new photo photo and see what it will look like on the Photo Sessions website.
 
 The page is identical to the photo Page, except for three changes:
 
 ????? A preview bar along the top reminds the user that they are in preview mode, and need to click the publish button at the bottom of the page in order to make the photo live on the Photo Sessions website.
 
-????? At the bottom left of the page the "share this page" icons do not work, as we do not want the user to accidentally share the preview page. If these icons are clicked a modal pops up to inform the user of this and tell them they can share the page once the photo has been published. 
+????? At the bottom left of the page the "share this page" icons do not work, as we do not want the user to accidentally share the preview page. If these icons are clicked a modal pops up to inform the user of this and tell them they can share the page once the photo has been published.
 
 On the bottom right of the page, the "search more activities" button has been replaced with Edit and Publish buttons.
 
@@ -354,9 +369,11 @@ The Edit button takes the user to the Edit photo Page.
 The Publish button updates the photo with {"published": false} so that the data can now be displayed on the Photo Sessions home page and All Photos page.-->
 
 ### Edit photo Page
+
 <!--The Edit photo Page is identical to the Add New Page, except that the heading on the page says "Edit" and data for the activity to be edited has been pulled from the database and each <input>, <select>, <checkbox> and <textarea> values have been populated with the correct data.-->
 
 ### Contact Page
+
 <!--???? The Contact Page features an email contact form, which is wired up to my email address with EmailJS.????
 
 The contact page also features the contact information for Photo Sessions as displayed in the footer.-->
@@ -378,11 +395,10 @@ Give admin the ability to add/remove "recommended" field on any photo from datab
 
 ## Features Left to Implement
 
-
-
 # Information Architecture
 
 ## Database Choice
+
 <!--A SQL database structure would have suited this project better, however this website is a student project and the current point that I am in the course is my only opportunity to use NoSQL as the final piece of coursework (the next one) required SQL. In order to get experience with using NoSQL this project utilizes the NoSQL database MongoDB.
 
 To have easy access to relational data, inner objects were used inside the data structure so that they could be accessed and looped through where needed.
@@ -394,36 +410,49 @@ Example JSON from the activities collection-->
 # Technologies Used
 
 ## Tools
+
 Gitpod is the IDE used for developing this project.
 Flickr to store all external images for this project.
 PIP for installation of tools needed in this project.
 Git to handle version control.
+
 <!--MongoDB Atlas is the database for this project-->
+
 GitHub to store and share all project code remotely.
+
 <!--Browserstack to test functionality on all browsers and devices.
 Am I Responsive to create the images in this readme file of each page displayed on different screen sizes.-->
 
-
 ## Libraries UPDATE!
+
 JQuery to simplify DOM manipulation.
+
 <!--Jasmine to run automated tests on JavaScript and jQuery code.
 Jasmine-jQuery to make it possible to test jQuery code using Jasmine.-->
+
 Bootstrap to simplify the structure of the website and make the website responsive easily.
 FontAwesome to provide icons for Photo Sessions.
+
 <!--Gijgo provided bootstrap styled date and time pickers.-->
+
 Google Fonts to style the website fonts.
+
 <!--PyMongo to make communication between Python and MongoDB possible.
 Flask to construct and render pages.
 Jinja to simplify displaying data from the backend of this project smoothly and effectively in html.-->
 
 ## Languages
+
 This project uses HTML, CSS, JavaScript and Python programming languages.
 
 # Testing
+
 <!--Testing information can be found in separate testing.md file-->
 
 # Deployment
+
 ## How to run this project locally
+
 To run this project on your own IDE follow the instructions below:
 
 Ensure you have the following tools:
@@ -434,10 +463,12 @@ The following must be installed on your machine:
 PIP
 Python 3
 Git
+
 <!-- An account at MongoDB Atlas or MongoDB running locally on your machine.
 How to set up your Mongo Atlas account here.-->
 
 ## Instructions
+
 Save a copy of the github repository located at https://github.com/Maja-Jer/photo_sessions by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the repository with the following command.
 git clone: https://github.com/Maja-Jer/photo_sessions
 If possible, open a terminal session in the unzip folder or cd to the correct location.
@@ -448,7 +479,7 @@ python -m .venv venv
 NOTE: Your Python command may differ, such as python3 or py
 
 Activate the .venv with the command:
-.venv\Scripts\activate 
+.venv\Scripts\activate
 Again this command may differ depending on your operating system, please check the Python Documentation on virtual environments for further instructions.
 
 If needed, Upgrade pip locally with
@@ -465,6 +496,7 @@ python3 manage.py runserver
 You can visit the website at -------
 
 ### Heroku Deployment
+
 To deploy Photo Sessions to heroku, take the following steps:
 
 Create a requirements.txt file using the terminal command pip freeze > requirements.txt.
@@ -483,12 +515,12 @@ In the heroku dashboard for the application, click on "Settings" > "Reveal Confi
 
 Set the following config vars:
 
-Key	Value
-DEBUG	FALSE
-IP	0.0.0.0
-MONGO_URI	mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
-PORT	5000
-SECRET_KEY	<your_secret_key>
+Key Value
+DEBUG FALSE
+IP 0.0.0.0
+MONGO_URI mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
+PORT 5000
+SECRET_KEY <your_secret_key>
 To get you MONGO_URI read the MongoDB Atlas documentation here
 In the heroku dashboard, click "Deploy".
 
@@ -497,38 +529,41 @@ In the "Manual Deployment" section of this page, made sure the master branch is 
 The site is now successfully deployed.
 
 # Credits
+
 ## Content
 
-
-Text for the Photo Sessions 
+Text for the Photo Sessions
 
 All other text on Photo Sessions was written by me.
 
 ## Media
+
 <!--### Animations
 Animated spinner was provided by icons8
 Hide and seek bot for 404 page was provided by dribbble.com-->
+
 ### Images
 
 The photographs are my personal photos taken on differnt trip in the recent year
 
-Background photo: 
-
+Background photo:
 
 ## Code
+
 <!--Template code for navbar and dropdown is taken from Bootstrap and modified to suit the sites needs.
 UPDATE THIS"-->
 
 ## Acknowledgements
+
 Special thanks to:
 my mentor
-tutors 
+tutors
 my Croatian group, specifically Igor
 
-
 # Contact
+
 To contact me feel free to email
 
-
 # Disclaimer
+
 The content of this website is educational purposes only.
