@@ -7,9 +7,9 @@
       "name": "Mt. Fuji",
       "description": "Viewed from a far, Mt.Fuji is a majestic experience",
       "price": 19.99,
-      "category": 6,
+      "category": 1,
       "rating": 4.5,
-      "image": "mount_fuji1.jpeg"
+      "image": "mount_fuji.jpg"
     }
   },
   {
@@ -20,7 +20,7 @@
       "name": "Osaka",
       "description": "Beautiful view over Osaka from the top of Osaka Castle",
       "price": 15.99,
-      "category": 5,
+      "category": 1,
       "rating": 4.8,
       "image": "osaka_castle.jpg"
     }
@@ -33,7 +33,7 @@
       "name": "A Deer in Nara",
       "description": "A beautiful deer in Nara Park",
       "price": 17.99,
-      "category": 4,
+      "category": 1,
       "rating": 4.9,
       "image": "nara_deer.jpg"
     }
@@ -46,7 +46,7 @@
       "name": "El Nido Beach",
       "description": "Relaxation on a beautiful beach, enjoying the sunset",
       "price": 16.99,
-      "category": 8,
+      "category": 2,
       "rating": 3.0,
       "image": "el_nido.jpg"
     }
@@ -59,7 +59,7 @@
       "name": "Asakusa Shrine in Tokyo",
       "description": "Night product of one of the most amazing shines in Tokyo",
       "price": 19.99,
-      "category": 13,
+      "category": 1,
       "rating": 5.0,
       "image": "tokyo.jpg"
     }
@@ -72,7 +72,7 @@
       "name": "Boracay Sunset",
       "description": "Boracay is famous for its sunsets. This is one of my favourites",
       "price": 18.99,
-      "category": 7,
+      "category": 2,
       "rating": 4.7,
       "image": "boracay.jpg"
     }
@@ -85,7 +85,7 @@
       "name": "Palawan - Coron",
       "description": "Beautiful view from the walk to the Kayangan Lake on Coron",
       "price": 19.0,
-      "category": 8,
+      "category": 2,
       "rating": 4.4,
       "image": "coron.jpg"
     }
@@ -98,7 +98,7 @@
       "name": "Manila",
       "description": "View over the Manila skyline from Intramuros (Old town Manila)",
       "price": 13.99,
-      "category": 9,
+      "category": 2,
       "rating": 4.5,
       "image": "manila.jpg"
     }
@@ -111,7 +111,7 @@
       "name": "Lisbon",
       "description": "Tile work on a Lisbon building",
       "price": 11.99,
-      "category": 11,
+      "category": 3,
       "rating": 4.7,
       "image": "lisbon.jpg"
     }
@@ -124,7 +124,7 @@
       "name": "Porto",
       "description": "Beautiful view of Porto",
       "price": 14.99,
-      "category": 12,
+      "category": 3,
       "rating": 4.4,
       "image": "porto.jpg"
     }
@@ -137,10 +137,10 @@
         "name": "Sailing on Tejo River", 
         "description": "Beautiful sunset on Tejo River, lisbon", 
         "price": 19.99, 
-        "category": 10, 
+        "category": 3, 
         "rating": 4.0, 
         "image": "sailing.jpg"
-        }
-        }
-        ,
+    }
+}
+        
 ]
