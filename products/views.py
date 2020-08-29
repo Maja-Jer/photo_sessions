@@ -12,7 +12,7 @@ from .forms import ProductForm
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
-
+    print("in")
     products = Product.objects.all()
     query = None
     categories = None
@@ -21,6 +21,7 @@ def all_products(request):
 
     if request.GET:
         if 'sort' in request.GET:
+            print("in sort")
             sortkey = request.GET['sort']
             sort = sortkey
             if sortkey == 'name':
@@ -35,9 +36,13 @@ def all_products(request):
             products = products.order_by(sortkey)
 
         if 'category' in request.GET:
+            print("in category")
             categories = request.GET['category'].split(',')
+            print(categories)
             products = products.filter(category__name__in=categories)
+            print(products)
             categories = Category.objects.filter(name__in=categories)
+            print(categories)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -58,6 +63,8 @@ def all_products(request):
         'current_categories': categories,
         'current_sorting': current_sorting,
     }
+
+    # print(context)
 
     return render(request, 'products/products.html', context)
 

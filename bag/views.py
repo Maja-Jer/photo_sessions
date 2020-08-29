@@ -77,7 +77,7 @@ def adjust_bag(request, item_id):
 
 def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
-
+    print("in remove")
     try:
         product = get_object_or_404(Product, pk=item_id)
         size = None
