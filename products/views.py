@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category#,#Ratings,Review
+from .models import Product, Category,Ratings,Review
 from .forms import ProductForm
 
 # Create your views here.
@@ -74,11 +74,20 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
-    RateAndReviews = Rating.objects.all().filter(product = product)
+    Ratings_ = Ratings.objects.all().filter(product = product)
+    Reviews = Review.objects.all().filter(product = product)
+
+    rateAndReviews = []
+
+    for rating in Ratings_:
+        if(Reviews.filter(user=rating.user).count()==0):
+            rateAndReviews.append({'username':rating.user.username,'rating':rating.rating})
+        else:
+            rateAndReviews.append({'username':rating.user.username,'review':Reviews.get(user=rating.user).review ,'rating':rating.rating})   
 
     context = {
         'product': product,
-        'reviews':RateAndReviews
+        'reviews':rateAndReviews
     }
 
     return render(request, 'products/product_detail.html', context)

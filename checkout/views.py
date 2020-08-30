@@ -204,7 +204,7 @@ def add_review_rating(request):
             ratingobj = Ratings.objects.get(Q(user=user)&Q(product=product))   
             ratingobj.rating = rating
             ratingobj.save() 
-        # refreshRating(productid)      
+        # refreshRating(product)      
 
 
     if Review.objects.all().filter(Q(user=user)&Q(product=product)).count() == 0:
@@ -223,16 +223,17 @@ def add_review_rating(request):
 
     return JsonResponse({})
 
-from decimal import *
+from decimal import Decimal
+
 def refreshRating(product):
     sum = 0.0
     count = 0
 
-    all_ratings = Ratings.objects.all().filter(product__id=product)
+    all_ratings = Ratings.objects.all().filter(product=product)
 
     for i in all_ratings:
-        sum +=Decimal(i.rating)
+        sum +=(i.rating)
         count += 1
 
-    product.rating = sum/count
+    product.rating = Decimal.from_float(sum/count)
     product.save()    

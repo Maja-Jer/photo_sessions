@@ -62,7 +62,7 @@
 				{% for item in order.lineitems.all %}
 				<div class="row">
 					<div class="col-12 col-md-4">
-						<p class="small mb-0 text-black font-weight-bold">
+						<p style="font-size:20px" class=" mb-0 text-black font-weight-bold">
 							{{ item.product.name }}
 						</p>
                         <div class="input-group">
@@ -76,12 +76,12 @@
                             <input id="review-{{item.product.id}}" style="height:30px;width:500px;margin-top:10px;" placeholder="Add a review..." class="form-control">
                             <input id="count-{{item.product.id}}" value="0" hidden>
                             <span style="margin-top:10px;margin-bottom:10px;" class="input-group-btn">
-                                <button onclick= "resultsOnClick('{{item.product.id}}')" class = "btn btn-primary btn-sm">Submit</button>
+                                <button onclick= "resultsOnClick('{{item.product.id}}')" class = "btn btn-primary">Submit</button>
                             </span>
                         </div>
 					</div>
 					<div class="col-12 col-md-8 text-md-right">
-						<p class="small mb-0">{{ item.quantity }} @ ${{ item.product.price }} each</p>
+						<p style="font-size:20px" class=" mb-0">{{ item.quantity }} @ ${{ item.product.price }} each</p>
 					</div>
 				</div>
 				{% endfor %}
@@ -216,7 +216,7 @@
 	<!--check if I need it, change link to send to Products home page-->
 	<div class="row">
 		<div class="col-12 col-lg-7 text-right">
-			<a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-black rounded-0 my-2">
+			<a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
 				<span class="icon mr-2">
 						<i class="fas fa-gifts"></i>
 					</span>
