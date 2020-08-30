@@ -2,10 +2,11 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpR
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
+from django.http import JsonResponse
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
-from products.models import Product
+from products.models import Product,Ratings,Review
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
@@ -177,5 +178,61 @@ def checkout_success(request, order_number):
     context = {
         'order': order,
     }
-
+    print(order)
     return render(request, template, context)
+
+from django.db.models import Q
+
+
+def add_review_rating(request):
+    productid = request.POST.get("productid")
+    
+    user = request.user
+    product = get_object_or_404(Product,id=productid)
+    rating = request.POST.get("rating")
+    review = request.POST.get("review")
+    print(rating)
+    print(review)
+    if int(rating) != 0:
+        if Ratings.objects.all().filter(Q(user=user)&Q(product=product)).count() == 0:
+            Ratings.objects.create(
+                user=user,
+                product=product,
+                rating=int(rating)
+            )
+        else:
+            ratingobj = Ratings.objects.get(Q(user=user)&Q(product=product))   
+            ratingobj.rating = rating
+            ratingobj.save() 
+        # refreshRating(productid)      
+
+
+    if Review.objects.all().filter(Q(user=user)&Q(product=product)).count() == 0:
+        Review.objects.create(
+            user=user,
+            product=product,
+            review=review
+        )
+    else:
+        reviewobj = Review.objects.get(Q(user=user)&Q(product=product))   
+        reviewobj.review = review
+        reviewobj.save() 
+
+
+          
+
+    return JsonResponse({})
+
+from decimal import *
+def refreshRating(product):
+    sum = 0.0
+    count = 0
+
+    all_ratings = Ratings.objects.all().filter(product__id=product)
+
+    for i in all_ratings:
+        sum +=Decimal(i.rating)
+        count += 1
+
+    product.rating = sum/count
+    product.save()    

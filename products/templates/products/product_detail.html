@@ -87,9 +87,21 @@
 							<input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
 				</form>
+
+
 			</div>
+            
 		</div>
+
 	</div>
+    <!-- <h2>Reviews and ratings</h2>
+    <br>  
+    {% for review in reviews %}
+        <h3>{{review.user.username}}</h3>
+        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ review.rating }} / 5</small>
+        <h5>{{review.review}}</h5>
+        <br>
+    {% endfor %} -->
 </div>
 {% endblock %}
 

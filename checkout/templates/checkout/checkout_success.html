@@ -65,6 +65,20 @@
 						<p class="small mb-0 text-black font-weight-bold">
 							{{ item.product.name }}
 						</p>
+                        <div class="input-group">
+                            
+                            <span  onmouseover="starmark(this)" onclick="starmark(this)" id="1-{{item.product.id}}" style="font-size:20px;cursor:pointer;"  class="fa fa-star"></span>
+                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="2-{{item.product.id}}"  style="font-size:20px;cursor:pointer;" class="fa fa-star "></span>
+                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="3-{{item.product.id}}"  style="font-size:20px;cursor:pointer;" class="fa fa-star "></span>
+                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="4-{{item.product.id}}"  style="font-size:20px;cursor:pointer;" class="fa fa-star"></span>
+                            <span onmouseover="starmark(this)" onclick="starmark(this)" id="5-{{item.product.id}}"  style="font-size:20px;cursor:pointer;" class="fa fa-star"></span>
+                            
+                            <input id="review-{{item.product.id}}" style="height:30px;width:500px;margin-top:10px;" placeholder="Add a review..." class="form-control">
+                            <input id="count-{{item.product.id}}" value="0" hidden>
+                            <span style="margin-top:10px;margin-bottom:10px;" class="input-group-btn">
+                                <button onclick= "resultsOnClick('{{item.product.id}}')" class = "btn btn-primary btn-sm">Submit</button>
+                            </span>
+                        </div>
 					</div>
 					<div class="col-12 col-md-8 text-md-right">
 						<p class="small mb-0">{{ item.quantity }} @ ${{ item.product.price }} each</p>
@@ -210,7 +224,57 @@
 			</a>
 		</div>
 	</div>
-    {% endif %}
 	<!--end of checking if i need it-->
+    {%endif%}
 </div>
+
+
+<script>
+var count;
+
+function starmark(item)
+{
+    count=item.id[0];
+    sessionStorage.starRating = count;
+    var subid= item.id.substring(1);
+    document.getElementById("count-"+subid.substring(1)).value = count;
+    for(var i=0;i<5;i++)
+    {
+        if(i<count)
+        {
+            document.getElementById((i+1)+subid).style.color="orange";
+        }
+        else
+        {
+            document.getElementById((i+1)+subid).style.color="black";
+        }
+    }
+}
+
+function resultsOnClick(productid){
+    var rating = document.getElementById("count-"+productid).value;
+    console.log(rating);
+    var review = document.getElementById("review-"+productid).value;
+    console.log(review);
+    console.log(productid);
+
+    if(rating == "0" && review ==""){
+        alert("Please enter rating and/or review to submit!!!");
+    }   
+    else{
+        $.ajax({
+                url: "/checkout/add_review_rating/",
+                method:"POST",
+                data:{"rating":rating,"productid":productid,"review":review,csrfmiddlewaretoken: '{{ csrf_token }}'},
+                success: function(data){
+                    alert("Review/Rating is saved!");
+                },
+                error: function(errorData){
+                    console.log(errorData);
+                }
+            })
+    }
+}
+</script>
+
 {% endblock %}

@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, Category#,#Ratings,Review
 from .forms import ProductForm
 
 # Create your views here.
@@ -74,8 +74,11 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
+    RateAndReviews = Rating.objects.all().filter(product = product)
+
     context = {
         'product': product,
+        'reviews':RateAndReviews
     }
 
     return render(request, 'products/product_detail.html', context)
