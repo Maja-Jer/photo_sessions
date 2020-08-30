@@ -19,6 +19,7 @@
 		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
 	<link rel="stylesheet" href="{% static 'css/base.css' %}">
+    
 	{% endblock %}
 
 	{% block extra_css %}
@@ -158,5 +159,90 @@
 
 
 </body>
+
+<footer style="background:grey;">
+    <h2 style="margin-top:20px;font-family:Brush Script MT;color:white;text-align:center;">Find us on</h2>
+        <div class="middle">
+      <a class="btn1" href="#">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="btn1" href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="btn1" href="#">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <h6 style="font-family:Calebri;color:white;text-align:center;">Privacy Policy</h6>
+    <h6 style="margin:10px;font-family:Calebri;color:white;text-align:right;">type your content here</h6>
+</footer>
+
+<style>
+
+.middle {
+  margin-top:100px;  
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.btn1 {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn1 i {
+  line-height: 90px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+
+.btn1:hover i {
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.btn1::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.btn1:hover::before {
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes aaa {
+  0% {
+    left: -110%;
+    top: 90%;
+  }
+  50% {
+    left: 10%;
+    top: -30%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
+</style>
 
 </html>
