@@ -364,7 +364,7 @@ In your local IDE create a file called .flaskenv.
 You can now run the application with the command
  
 python3 manage.py runserver
-You can visit the website at -------
+You can visit the website at https://photo-sessions.herokuapp.com/
  
 ### Heroku Deployment
 To deploy Photo Sessions to heroku, take the following steps:
