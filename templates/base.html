@@ -118,7 +118,6 @@
 				{% include 'includes/main-nav.html' %}
 			</nav>
 		</div>
-        <!--not showing correctly, has to have black background with white letters-->
 		<div id="delivery-banner" class="row text-center">
 			<div class="col bg-black text-white">
 				<h4 style ="background:black;" class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
@@ -156,33 +155,77 @@
     </script>
 
 	{% endblock %}
+<!--footer
+<footer style="background:grey;width:100% !important;">
+    <h2 style="color:white;text-align:center;">Find us on</h2>
+    <div class="middle">
+        <!--a class="btn1" href="http://www.https://www.facebook.com">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a target="_blank" href="https://www.facebook.com/katarina.line">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<span class="sr-only">Facebook</span>
+						</a>
+        <a class="btn1" href="http://www.twitter.com">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a class="btn1" href="http://www.instagram.com">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    <div style="display:inline-block;margin-left:20%;">
+        <h5 style="font-family:Calebri;color:white;text-align:left;">Copyright: Maja Jercic<h5>
+        <h6 style="font-family:Calebri;color:white;text-align:right;">Built for educational purposes</h6>
+    </div>
+</footer-->
+
+<!--Footer-->
+	<footer class="container-fluid">
+		<div id="footer-details" class="row">
+			<div class="col-sm-4">
+				<p class="inline-block">
+					Copyright Maja Jercic
+					<br> For educational purposes only
+                </p>
+			</div>
+			
+			<div class="col-sm-4">
+				<h5 class="uppercase general-sub">Social</h5>
+				<ul class="list-inline social-links">
+					<li class="list-inline-item">
+						<a target="_blank" href="https://www.facebook.com">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<span class="sr-only">Facebook</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a target="_blank" href="https://www.instagram.com/">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+							<span class="sr-only">Instagram</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a target="_blank" href="https://www.youtube.com/channel">
+							<i class="fa fa-youtube" aria-hidden="true"></i>
+							<span class="sr-only">YouTube</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 
 
 </body>
 
-<footer style="background:grey;">
-    <h2 style="margin-top:20px;font-family:Brush Script MT;color:white;text-align:center;">Find us on</h2>
-        <div class="middle">
-      <a class="btn1" href="#">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a class="btn1" href="#">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a class="btn1" href="#">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
-    <h6 style="font-family:Calebri;color:white;text-align:center;">Privacy Policy</h6>
-    <h6 style="margin:10px;font-family:Calebri;color:white;text-align:right;">type your content here</h6>
-</footer>
 
+<!--
 <style>
 
 .middle {
-  margin-top:100px;  
-  position: relative;
-  top: 50%;
+  margin-top:20px;  
+  position: absolute;
+  /* top: 50%; */
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
@@ -190,8 +233,8 @@
 
 .btn1 {
   display: inline-block;
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
   background: #f1f1f1;
   margin: 10px;
   border-radius: 30%;
@@ -202,7 +245,7 @@
 }
 
 .btn1 i {
-  line-height: 90px;
+  line-height: 50px;
   font-size: 26px;
   transition: 0.2s linear;
 }
@@ -244,5 +287,6 @@
   }
 }
 </style>
+-->
 
 </html>

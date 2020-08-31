@@ -94,16 +94,18 @@
 		</div>
 
 	</div>
-    <h2>Reviews and ratings</h2>
-    <br>  
-    {% for review in reviews %}
-        <h3>{{review.username}}</h3>
-        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ review.rating }} / 5</small>
-        {%if 'review' in review%}
-        <h5>{{review.review}}</h5>
-        {%endif%}
-        <hr>
-    {% endfor %}
+    <div style="margin-left: 100px;margin-right: 100px;">
+        <h2>Reviews and ratings</h2>
+        <br>  
+        {% for review in reviews %}
+            <h3>{{review.username}}</h3>
+            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ review.rating }} / 5</small>
+            {%if 'review' in review%}
+            <h5>{{review.review}}</h5>
+            {%endif%}
+            <hr>
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}
 
