@@ -129,18 +129,17 @@
       "image": "porto.jpg"
     }
   },
-    {
-    "pk": 11, 
-    "model": "products.product", 
+  {
+    "pk": 11,
+    "model": "products.product",
     "fields": {
-        "sku": "pp5002761055", 
-        "name": "Sailing on Tejo River", 
-        "description": "Beautiful sunset on Tejo River, lisbon", 
-        "price": 19.99, 
-        "category": 3, 
-        "rating": 4.0, 
-        "image": "sailing.jpg"
+      "sku": "pp5002761055",
+      "name": "Sailing on Tejo River",
+      "description": "Beautiful sunset on Tejo River, lisbon",
+      "price": 19.99,
+      "category": 3,
+      "rating": 4.0,
+      "image": "sailing.jpg"
     }
-}
-        
+  }
 ]

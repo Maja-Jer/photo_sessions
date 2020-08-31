@@ -39,5 +39,5 @@
     "pk": 8,
     "model": "products.category",
     "fields": { "name": "sailing", "friendly_name": "Sailing" }
-  },
-
+  }
+]
