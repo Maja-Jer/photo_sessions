@@ -1,9 +1,3 @@
-SECRET KEY: 'p@ei#69*b*zz3u4yie-$()@cy^l(+x9&@6ypx+r0lm(3%_9hr7'
-
-
-https://github.com/AJGreaves/familyhub/blob/master/README.md
-https://guides.github.com/features/mastering-markdown/
-Started with VSC but decided to go back to Gitpod due to familiarity of the IDE
 # UX
 ## Goals
 ### Visitor Goals
@@ -26,7 +20,7 @@ A few of the possible goals users might have:
  
 The design of this site fits the conventions of similar sites, and lays out the information in a user friendly and accessible way.
  
-<!--The Photo Sessions page allows users to search by location, category, rating -->
+The Photo Sessions page allows users to search by location, category, rating 
  
 ### Business Goals
  
@@ -40,7 +34,7 @@ Value for money (at the moment the website is a student project, but eventual pl
  
 Photo Sessions is a great way to meet these user needs because:
  
-The user interface for inputting activity data has been carefully controlled to validate input and make sure what is provided fits the needs of the database structure. Setting input field types to ------- etc makes sure the user is prompted when the data they provide is incorrect.
+The user interface for inputting activity data has been carefully controlled to validate input and make sure what is provided fits the needs of the database structure. 
  
 The edit photo page is clearly structured and laid out in a simple and easy to understand
  
@@ -74,11 +68,9 @@ As a user on a budget, I want to be able to filter results by pricing. I also wa
  
 As a user accessing this site from a mobile phone or tablet, I want the site to have been designed responsively so that it is still easy to navigate and use on my smaller devices.
  
- 
- 
 As a regular user of the Photo Sessions website, I expect to be able to connect to the social media channels, to keep up to date with new entries on the site.
  
-As a user of Photo Sessions, I expect to be able to easily get in contact via a contact form, register, create an account
+As a user of Photo Sessions, I expect to be able to easily register, create an account
  
 As a registered user, I expect to be able to
 view my past orders
@@ -86,7 +78,7 @@ Rate and review photos I already purchased earlier
  
 As a user I expect feedback from the website I am using when I interact with it, I expect notifications informing me of actions completed,whether they were successful or not.
  
-## admin Stories
+## Admin Stories
 As an Admin of Photo sessions the goal is:
  
 To be able to log in to access my existing entries, and for the photos to only be editable with my account.
@@ -131,10 +123,10 @@ All buttons on the site fit the same bootstrap button styling in size and shape.
 Bootstrap cards were utilized on Photo Sessions to display short information about each photo, with a link to each photo page on it.
  
 Css effects to all text links on the site (other than the Categories under the photos.cause them to animate to a darker shade when hovered over(other than the Categories)
+
 # Wireframes
 These wireframes were created using Balsamiq during the Scope Plane part of the design and planning process for this project.
-P
-UT WIREFRAMES IN A SEPARATE DOC
+Document with wireframes: https://docs.google.com/document/d/101fb_Oamv5CRGGy4La284xWTZGbgFE-xYd7d2AdYSt8/edit?usp=sharing
  
 # Features
 ## Existing Features
@@ -169,7 +161,7 @@ The navbar is collapsed into a burger icon on small screens.
  
 The practical design choice was made not to fix the navbar to the top of the page as the user scrolls. This was because I wanted as much screen height as possible to display the website information on and I did not want to take up precious space with a fixed navbar. To get around the problem of having to scroll up a long way to reach the navigation, I added a scroll to top button above the footer as well.
  
-Return to top button: 
+### Return to top button: 
  
 A floating button appears on the lower right of the screen when the user starts to scroll downwards. Clicking this moves the view back up to the top of the page. I added this feature because some pages can be quite long and the navbar is not fixed to the top of the page.
  
@@ -185,7 +177,7 @@ Background Image: https://www.desktopbackground.org/wallpaper/high-resolution-be
  
 The Photo Sessions homepage features a photo that is interesting to lovers of good photos and travel. I chose this image because it is eye catching and striking. The tagline for the website is laid over the image. This image was coded as a background-image in css and set to background-size: cover; so that it is responsive while never getting stretched or distorted.
  
-Photo Cards
+### Photo Cards
  
 Each photo card on the Photos page gives the user some brief and useful information about each of the photos displayed. The photo image, price, rating and the category. Every card is clickable to go to the main photo page for that photo, so that if the user wishes to learn more the information it is only one click away.
  
@@ -195,8 +187,7 @@ The edit button takes the user to the Edit photo Page where they can update the 
  
 The delete button simply deletes the photo
  
- 
-Search
+### Search
  
 At the moment the filters available are:
  
@@ -204,8 +195,6 @@ By name (A-Z) and (z-A)
 By price (low to high and high to low
 By Rating
 By Category (A-Z and Z-A)
- 
- 
  
 As soon as the user clicks on one of these options a request is sent to pull the relevant data and display it for the user, without having to reload the page.
  
@@ -226,7 +215,6 @@ The photo description is displayed on the right of the photo in the photo page, 
 ### Sign Up Page
 The Sign Up page features a simple form, where the user can input an account name and password. The form was kept deliberately simple so that signup has minimum barriers.
  
- 
 If the user does not already exist in the database then the account is created, and a notification informing the user of successful creation of their account appears. 
  
 ### log In Page
@@ -237,15 +225,11 @@ If the user inputs incorrect data a notification responds with various messages 
 When the user logs in with a correct username success notification appears 
 When the admin logs in with a correct username success notification appears and admin can see Product Management in My account and will also have the option to edit or Delete photos
  
- 
 ### Product Management Page
- 
 When logging in as Admin, Product management page appears. In there the Admin is able to add photos by inputting the name, SKU, description, photo searchable from the computer
  
 ### Account Page
 Photo Sessions account page on all major screen sizes is responsive
- 
- 
  
 ### Add New photo Page
 Photo Sessions add new photo page on all major screen sizes
@@ -262,7 +246,6 @@ rating
 photo itself
 friendly name
  
- 
 Categories - dropdown to indicate what categories the photo applies to.
 Japan
 Portugal
@@ -273,13 +256,10 @@ City
 Nature 
 Sailing
  
- 
 ### Edit photo Page
 The Edit photo Page is identical to the Add New Page, except that the heading on the page says "Edit" and data for the activity to be edited has been pulled from the database. 
  
- 
 ### Admin account
- 
 Give myself (or any other administrator of Photo Sessions) special permissions to access / change data in the database from a Photo Sessions interface, rather than having to access the data directly in Django.
  
 Give admin the ability to view, edit and delete any photo from database.
@@ -288,12 +268,13 @@ Have Order History on the users account page so they can see which of the photos
  
 ## Features Left to Implement
 Fix the option when a non-registered user buys the photo, to create the account for them
+While this is currently a student project, the idea is to transform this site into a site that sells prints of my personal photos and prints of my friends' artwork
  
  
 # Information Architecture
  
 ## Database Choice
-Flask and then later got pushed to Heroku
+SQL and then later got pushed to Heroku
  
 # Technologies Used
  
@@ -308,7 +289,6 @@ Am I Responsive to test the responsiveness
  
 ## Libraries
 JQuery to simplify DOM manipulation.
- 
 Bootstrap to simplify the structure of the website and make the website responsive easily.
 FontAwesome to provide icons for Photo Sessions.
 Google Fonts to style the website fonts.
@@ -322,7 +302,6 @@ This project uses HTML, CSS, JavaScript and Python programming languages.
 Testing was done across multiple browsers, laptops and phones. The responsiveness and features were tested and they were all working correctly
 
 # Code checkers
-
 Pep8 for python
 W3 for HTML and CSS
 CodeBeautify for JS
