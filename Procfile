@@ -1,0 +1,1 @@
+web: gunicorn photo_sessions.wsgi:application
