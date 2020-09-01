@@ -115,7 +115,7 @@ A black was chosen for the main text as it contrasts with the white background c
  
 The navbar background colour is a clean white colour, light enough to provide contrast with the headings, while still setting itself apart from the photo background in the main content.
  
-In the footer a white, provides the background colour, which is a good contrast to 
+In the footer a blue colour, provides the background colour, which is a good contrast to the whitness of the rest of the page.
  
 ## Styling
  
@@ -166,6 +166,8 @@ The practical design choice was made not to fix the navbar to the top of the pag
 A floating button appears on the lower right of the screen when the user starts to scroll downwards. Clicking this moves the view back up to the top of the page. I added this feature because some pages can be quite long and the navbar is not fixed to the top of the page.
  
 ## Footer
+
+i have attempted to make the footer to stick to the bottom, but i haven'tmanaged to, I kept the code that I used, so it's visible and it works in Dev mode, but i haven't been able to fix it from the code. 
  
 ### The footer features:
 Links to social media locations (Which will eventually be linked up to the Photo Sessions social media platforms, once they exist).
