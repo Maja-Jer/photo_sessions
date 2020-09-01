@@ -273,6 +273,8 @@ Fix the option when a non-registered user buys the photo, to create the account 
 While this is currently a student project, the idea is to transform this site into a site that sells prints of my personal photos and prints of my friends' artwork
 
 i haven't been able to update the responsiveness on the smallest screens as the delivery banner overlays them, so that is something to be looked at a later stage.
+
+Fix the location of the revies and rating on small screens
  
 # Information Architecture
  
