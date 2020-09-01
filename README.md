@@ -271,6 +271,11 @@ Have Order History on the users account page so they can see which of the photos
 ## Features Left to Implement
 Fix the option when a non-registered user buys the photo, to create the account for them
 While this is currently a student project, the idea is to transform this site into a site that sells prints of my personal photos and prints of my friends' artwork
+
+i haven't been able to update the responsiveness on the smallest screens as the delivery banner overlays them, so that is something to be looked at a later stage.
+
+i haven't been able to implement return to homepage on md and small screens, i have tried to debug, I left the code to show the attempt
+
  
  
 # Information Architecture
